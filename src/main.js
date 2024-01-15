@@ -30,10 +30,10 @@ import 'vue3-tel-input/dist/vue3-tel-input.css'
 
 Amplify.configure({
   Auth: {
-    region: '<< ENTER YOUR VALUE >>',
-    identityPoolRegion: '<< ENTER YOUR VALUE >>',
-    userPoolId: '<< ENTER YOUR VALUE >>',
-    userPoolWebClientId: '<< ENTER YOUR VALUE >>',
+    region: 'us-east-1',
+    identityPoolRegion: 'us-east-1',
+    userPoolId: 'us-east-1_t41jWfi0B',
+    userPoolWebClientId: '2gicjcsrrlve0ohst7qlato2g9',
     mandatorySignIn: false,
     authenticationFlowType: 'CUSTOM_AUTH',
   }
@@ -47,10 +47,10 @@ app.config.globalProperties.$appName = 'Barista'
 app.config.globalProperties.$adminApp = true
 
 // ** Backend config **
-app.config.globalProperties.$region = '<< ENTER YOUR VALUE >>'
-app.config.globalProperties.$APIurl = '<< ENTER YOUR VALUE >>'
-app.config.globalProperties.$APIconfigURL = '<< ENTER YOUR VALUE >>'
-app.config.globalProperties.$ConfigEndpoint = '<< ENTER YOUR VALUE >>'
+app.config.globalProperties.$region = 'us-east-1'
+app.config.globalProperties.$APIurl = 'https://ti6ikuttqd.execute-api.us-east-1.amazonaws.com/Prod'
+app.config.globalProperties.$APIconfigURL = 'https://6zxljsz6al.execute-api.us-east-1.amazonaws.com/Prod'
+app.config.globalProperties.$ConfigEndpoint = 'https://ti6ikuttqd.execute-api.us-east-1.amazonaws.com/Prod'
 
 // ** Websocket connection **
 //  PoolId: Retrieve this with the CLI command: aws cognito-identity list-identity-pools --max-results 10 --region <<REGION>>
